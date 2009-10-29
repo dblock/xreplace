@@ -1,0 +1,49 @@
+package XClasses;
+
+{$R *.RES}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'XReplace-32 Common Classes'}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl50,
+  Vclx50,
+  VclSmp50,
+  SysClasses,
+  vclie50;
+
+contains
+  d32about in '..\Classes\Common\d32about.pas',
+  d32debug in '..\Classes\Common\d32debug.pas',
+  d32errors in '..\Classes\Common\d32errors.pas',
+  d32gen in '..\Classes\Common\d32gen.pas',
+  d32reg in '..\Classes\Common\d32reg.pas',
+  CPidl in '..\Classes\ShellView\CPidl.pas',
+  TAdderThread in '..\Classes\DropView\TAdderThread.pas',
+  TDropV in '..\Classes\DropView\TDropV.pas',
+  PidlManager in '..\Classes\ShellView\PidlManager.pas',
+  ShellView in '..\Classes\ShellView\ShellView.pas',
+  TPicFile in '..\Classes\PicFile\TPicFile.pas',
+  MDlg in '..\Classes\XReplace\MDlg.pas' {MsgForm};
+
+end.

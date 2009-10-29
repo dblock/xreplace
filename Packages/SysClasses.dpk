@@ -1,0 +1,42 @@
+package SysClasses;
+
+{$R *.RES}
+{$R '..\Classes\BrowseDr\BrowseDr.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $00400000}
+{$DESCRIPTION 'System Support Classes'}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl40,
+  Vclx40;
+
+contains
+  TrayIcon in '..\Classes\TrayIcon\trayicon.pas',
+  BrowseDr in '..\Classes\BrowseDr\BrowseDr.pas',
+  StrDropGrid in '..\Classes\StrDropGrid\StrDropGrid.pas',
+  ShellView in '..\Classes\ShellView\ShellView.pas',
+  PidlManager in '..\Classes\ShellView\PidlManager.pas',
+  CPidl in '..\Classes\ShellView\CPidl.pas',
+  TPicFile in '..\Classes\PicFile\TPicFile.pas';
+
+end.
